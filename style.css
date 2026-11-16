@@ -1,0 +1,155 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #FFF8F0;
+  color: #302820;
+  font-family: Arial, sans-serif;  
+}
+
+header {
+  text-align: center;
+  background-color: #FFFFFF;
+  padding: 20px;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+nav a {
+  text-decoration: none;
+  color: #302820;
+  background-color: #DDE8C5;
+  padding: 10px 16px;
+  border-radius: 20px;
+  flex-shrink: 0;
+}
+
+nav a.ativo{
+  background-color: #40570D;
+  color: #FFFFFF;
+}
+
+nav a:hover {
+  background-color: #40570D;
+  color: #FFFFFF;
+}
+
+nav a:focus-visible {
+  outline: 3px solid #302820;
+  outline-offset: 3px;
+}
+
+main {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+article {
+  background-color: #FFFFFF;
+  padding: 16px;
+  border-radius: 12px;
+  border: 1px solid #EEE5D9;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+section {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.lista-produtos {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+@media (min-width: 650px) {
+  .lista-produtos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+article img {
+  display: block;
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+article h3 {
+  font-size: 20px;
+  color: #302820;
+  margin: 12px 0 8px;
+  font-weight: bold;
+}
+
+article p {
+  font-size: 15px;
+  line-height: 1.5;
+  margin: 8px 0;
+}
+
+.preco {
+  font-size: 18px;
+  font-weight: bold;
+  color: #40570D;
+  margin-top: 10px;
+  text-align: right;
+}
+
+@media (max-width: 600px) {
+  main {
+    padding: 12px;
+  }
+}
+
+section h2 {
+  font-size: 24px;
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #DDE8C5;
+}
+
+footer {
+  background-color: #40570D;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 24px 20px;
+  margin-top: 24px;
+}
+
+footer h2 {
+  font-size: 20px;
+  margin: 0 0 16px;
+}
+
+footer nav {
+  justify-content: center;
+  gap: 12px;
+}
+
+footer nav a {
+  background-color: #FFFFFF;
+  color: #40570D;
+}
+
+footer nav a:hover {
+  background-color: #DDE8C5;
+  color: #302820;
+}
+
+footer nav a:focus-visible {
+  outline: 3px solid #FFFFFF;
+  outline-offset: 4px;
+}
