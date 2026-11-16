@@ -67,6 +67,10 @@ section {
   gap: 16px;
 }
 
+section[hidden] {
+  display: none;
+}
+
 .lista-produtos {
   display: grid;
   grid-template-columns: 1fr;
